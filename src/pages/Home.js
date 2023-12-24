@@ -1,7 +1,8 @@
-import React, { useCallback, useRef, useEffect } from "react";
+import React, { useCallback, useRef, useEffect,useState } from "react";
 import confetti from "canvas-confetti";
 import "./home.scss";
 const Home = () => {
+  const [screen,setScreen]=useState('Congrats!! U made the right choice... DM me the details😉');
   const noButtonRef = useRef(null);
     let counter =0;
   useEffect(() => {
@@ -22,6 +23,8 @@ const Home = () => {
       noButton.style.position = "absolute";
       noButton.style.left = `${adjustedX}px`;
       noButton.style.top = `${adjustedY}px`;
+        } else {
+          setScreen('Nw looking foward to the next year with u😉')
         }
     };
 
@@ -77,12 +80,12 @@ const Home = () => {
       </section>
       <div className="hidden-container" style={{ display: "none" }}>
         <div className="result">
-          Congrats!! U made the right choice... DM me the details😉
+          {screen}
         </div>
       </div>
       <section className="section section2">
         <div className="section-content">
-          <h1>Do u wanna go out with me for christmas?</h1>
+          <h1>Are you free tmr? for christmas outing</h1>
           <img
             src="https://media.tenor.com/KM1VySAHeToAAAAi/cheriuzzina.gif"
             alt="bear-gif"
@@ -102,7 +105,16 @@ const Home = () => {
             >
               Yes
             </button>
-            <button className="no" ref={noButtonRef}>
+            <button className="no" ref={noButtonRef} onClick={e=>{
+              
+                e.target.parentElement.parentElement.parentElement.parentElement.children[1].style.display =
+                  "block";
+                e.target.parentElement.parentElement.parentElement.parentElement.children[0].style.display =
+                  "none";
+                  e.target.parentElement.parentElement.parentElement.parentElement.children[2].style.display =
+                  "none";
+              
+            }}>
               No
             </button>
           </div>
