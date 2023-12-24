@@ -66,7 +66,7 @@ const Home = () => {
       <section className="section section1">
         <div className="section-content">
           <h1>Yo Tharika</h1>
-          <p>I wanted to ask u something...</p>
+          <p>Interested in secret santa? But its not secret.</p>
           <img
             src="https://media.tenor.com/8rFJZlbhqKUAAAAi/happy-new-year.gif"
             alt="bear-gif"
@@ -83,7 +83,7 @@ const Home = () => {
       </div>
       <section className="section section2">
         <div className="section-content">
-          <h1>Are you free tmr? for christmas outing</h1>
+          <h1>For that, Are you free tmr?<br></br><span style={{fontSize:'24px'}}>Christmas outing</span></h1>
           <img
             src="https://media.tenor.com/KM1VySAHeToAAAAi/cheriuzzina.gif"
             alt="bear-gif"
