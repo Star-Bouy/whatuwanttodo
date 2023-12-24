@@ -23,8 +23,6 @@ const Home = () => {
       noButton.style.position = "absolute";
       noButton.style.left = `${adjustedX}px`;
       noButton.style.top = `${adjustedY}px`;
-        } else {
-          setScreen('Nw looking foward to the next year with u😉')
         }
     };
 
@@ -106,7 +104,7 @@ const Home = () => {
               Yes
             </button>
             <button className="no" ref={noButtonRef} onClick={e=>{
-              
+                setScreen('Nw looking foward to the next year with u😉');
                 e.target.parentElement.parentElement.parentElement.parentElement.children[1].style.display =
                   "block";
                 e.target.parentElement.parentElement.parentElement.parentElement.children[0].style.display =
