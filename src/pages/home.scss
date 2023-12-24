@@ -1,0 +1,91 @@
+.home{
+    position: relative;
+    section{
+        background-color: #FF90BC;
+        height: 100vh;
+        .section-content{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .section1{
+        color: #F9F9E0;
+        font-size: 80px;
+        position: relative;
+        overflow: hidden;
+        h1{
+            margin:10px;
+            font-family: 'Lexend', sans-serif;
+        }
+        p{
+            font-size: 20px;
+            color: #fafafa;
+        }
+        .tree{
+            position: absolute;
+            bottom: -60px;
+            right: 0;
+            width:300px;
+        }
+        .tree2{
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+            width:200px;
+        }
+        .flw1{
+            position: absolute;
+            top: -20px;
+            left: -30px;
+            width: 150px;
+            transform: rotate(150deg);
+        }
+        
+    }
+    .section2{
+        background-color: #F9F9E0;
+        color: #8ACDD7;
+        font-size: 30px;
+        font-family: 'Borel',sans-serif;
+        position: relative;
+        button{
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            font-size: 20px;
+            margin-right: 20px;
+        }
+        img{
+            margin-bottom: 20px;
+        }
+        .yes{
+            background-color: lightgreen;
+        }
+        .no{
+            background-color: lightcoral;
+        }
+    }
+}
+
+.hidden-container{
+    //z-index: 100;
+    background-color: #F9F9E0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    .result{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #FF90BC;
+        font-weight: 600;
+        font-size: 23px;
+        font-family: 'Borel',sans-serif;
+    }
+}
